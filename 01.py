@@ -1,15 +1,14 @@
 class Car:  # blueprint
-    pass
+    def show(self):
+        print('This is Method...')
+        print(self)
 
 a = Car()   # object | instance
 b = Car()
 
+a.name = 'Pride'
+b.name = 'Benz' # attribute | property
 
-a.name = 'Pride'    # attribute | property
-b.name = 'Benz'
-
-a.price = 100   # dot notation
-b.price = 900
-
-print(f"{a.name} costs {a.price} $")
-print(f"{b.name} costs {b.price} $")
+a.show()    # dot notation
+print(a)
+b.show()
